@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<script src="scripts/jquery.colorbox-min.js"></script> 
+<script src="scripts/cms.js"></script> 
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <h1 id="heading1" cms="on"  style="color:blue;">Prince is a Blue Heading 1</h1>
+    <h1 id="heading2" cms="on"  style="color:blue;">This is a Blue Heading 2</h1>
+    <h1 id="heading3" cms="on"  style="color:blue;">This is a Blue Heading 3</h1>
+    <h1 id="heading4" cms="on"  style="color:blue;">This is a Blue Heading 4</h1>
+    
+    <img id="image1" cms="on" src="images/image1.jpg" alt="Image1" style="width:128px;height:128px;">
+    <img id="image2" cms="on" src="images/image2.jpg" alt="Image2" style="width:128px;height:128px;">
+    <img id="image3" cms="on" src="images/image3.jpg" alt="Image3" style="width:128px;height:128px;">
+     
+     <form  id="the-form" method= "post" action="/upload" enctype="multipart/form-data">
+        <input name="upl" type="file">
+        <input type="submit" value="Upload" />
+    </form>
+</body>
+</html>
+
