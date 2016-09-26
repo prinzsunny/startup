@@ -79,9 +79,10 @@ function getTemplate(element){
 
 
 function test(){
+        event.preventDefault();
         var form = document.getElementById('cmsImage');
         var formData = new FormData(form);
-        formData.append('test',getCurrentPageContent());
+        formData.append('test',JSON.stringify(getCurrentPageContent()));
         var xhr = new XMLHttpRequest();
         // Add any event handlers here...
         xhr.open('POST', '/upload', true);

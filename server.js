@@ -35,7 +35,7 @@ app.post('/content', function(req,res){
 
 
 app.post('/upload', upload.single('upl'), function(req,res){
-	console.log(req.body);
+	console.log(JSON.parse(req.body.test));
 	console.log(req.file); 
 	res.status(204).end();
 });
